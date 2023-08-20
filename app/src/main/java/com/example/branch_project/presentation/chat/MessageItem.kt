@@ -10,13 +10,10 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.LightGray
 import androidx.compose.ui.unit.dp
 import com.example.branch_project.domain.model.MessageItem
 import com.example.branch_project.ui.theme.LightBlue
-import com.example.branch_project.ui.theme.LightGreen
-import com.example.branch_project.ui.theme.LightYellow
 import java.time.format.DateTimeFormatter
 
 @RequiresApi(Build.VERSION_CODES.O)
@@ -43,7 +40,7 @@ fun MessageItem(messageItem: MessageItem) {
                     .widthIn(max = maxWidth * 0.8f, min = 0.dp)
                     .padding(horizontal = 10.dp, vertical = 5.dp),
             ) {
-                Column() {
+                Column {
                     Text(
                         text = messageItem.timestamp.format(DateTimeFormatter.ofPattern("MMM d yyy, h:mm a")),
                         modifier = Modifier.padding(top = 8.dp)
