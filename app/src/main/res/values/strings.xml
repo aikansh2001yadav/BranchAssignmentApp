@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Branch Assignment App</string>
+    <string name="internet_error">Internet Error</string>
+    <string name="internet_error_info">Check your connection</string>
+</resources>
